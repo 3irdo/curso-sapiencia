@@ -1,0 +1,378 @@
+/* logos from www.steamgriddb.com */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  overscroll-behavior-x: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #000;
+}
+
+/*header section*/
+
+header {
+  position: absolute;
+  z-index:4;
+}
+
+.header_container {
+  display: flex;
+  position: relative;
+  top: 50px;
+}
+
+.fs_logo {
+  display: inherit;
+  position: absolute;
+  margin-left: 4%;
+  background-image: url(https://res.cloudinary.com/dvn4cywk8/image/upload/v1688748203/FSCLONE/fs_logo_mi1wcr.png);
+  background-size: cover;
+  background-position: center;
+  width: 290px;
+  height: 25px;
+  filter: invert(100%);
+  z-index: 4;
+}
+
+nav {
+  display: flex;
+  width: 100vw;
+}
+.nav {
+  font-size: 2rem;
+  display: inherit;
+  float: right;
+  align-self: flex-end;
+  margin-left: 50%;
+}
+
+.nav li {
+  display: inherit;
+  color: #fff;
+  padding: 0 36px 0 36px;
+  height: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav li:hover {
+  color: #fff;
+}
+
+.nav ul li:nth-child(4) a::after {
+  display: flex;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+  background-image: url(/media/img/linkicon.png);
+  background-size: contain;
+  background-color: #fff;
+}
+
+/*main section  background games section */
+
+.main_container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+}
+
+#bg_wrapper {
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.bg_imgs {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  flex: 1 0 16.6vh;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  transition: all 0.5s ease-in-out;
+  margin: -54px;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+.bg_imgs:hover {
+  flex-grow: 2;
+  filter: grayscale(0%);
+}
+
+.logo {
+  content: "";
+  width: 230px;
+  height: 100px;
+  margin: 0 auto;
+  align-self: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0%;
+  transition: all 1s ease-in-out;
+}
+
+.op100 {
+  opacity: 100%;
+}
+
+iframe {
+  width: 288px;
+  height: 162px;
+}
+
+.plataforms {
+  font-size: 1.5rem;
+}
+
+.ds_bg {
+  background-image: url(https://res.cloudinary.com/dvn4cywk8/image/upload/v1690999229/FSCLONE/bg%20full%20size/ds_bg_invxnh.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ds_bg .logo {
+  background-image: url(https://res.cloudinary.com/dvn4cywk8/image/upload/v1691000389/FSCLONE/logos/ds_logo_fn6lv2.png);
+ 
+}
+
+.sekiro_bg {
+  background-image: url(https://res.cloudinary.com/dvn4cywk8/image/upload/v1691000205/FSCLONE/bg%20full%20size/sk_bg_i8dvyw.png);
+  background-size: cover;
+  background-position: 80%;
+}
+
+.sekiro_bg .logo {
+  background-image: url(https://res.cloudinary.com/dvn4cywk8/image/upload/v1691000389/FSCLONE/logos/sk_logo_sf2zxo.png);
+
+}
+
+.armored_bg {
+  background-image: url(https://res.cloudinary.com/dvn4cywk8/image/upload/v1691000205/FSCLONE/bg%20full%20size/armored_bg_zhgflz.png);
+  background-size: cover;
+  background-position: 25%;
+}
+
+.armored_bg .logo {
+  background-image: url(https://res.cloudinary.com/dvn4cywk8/image/upload/v1691000389/FSCLONE/logos/armored_logo_nh1rbn.png);
+}
+
+.elden_bg {
+  background-image: url(https://res.cloudinary.com/dvn4cywk8/image/upload/v1690999229/FSCLONE/bg%20full%20size/elden_bg_ziic8a.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.elden_bg .logo {
+  background-image: url(https://res.cloudinary.com/dvn4cywk8/image/upload/v1691000390/FSCLONE/logos/er_logo_va6wnp.png);
+ }
+
+ /* mejor usar grid */
+
+
+
+.bloddb_bg {
+  background-image: url(https://res.cloudinary.com/dvn4cywk8/image/upload/v1691000204/FSCLONE/bg%20full%20size/bb_bg_n0idaa.png);
+  background-size: cover;
+  background-position: 78%;
+}
+
+.bloddb_bg .logo {
+   background-image: url(https://res.cloudinary.com/dvn4cywk8/image/upload/v1691000389/FSCLONE/logos/bb_logo_zdvdbc.png);
+  }
+
+.deracine_bg {
+  background-image: url(https://res.cloudinary.com/dvn4cywk8/image/upload/v1691000204/FSCLONE/bg%20full%20size/deracine_bg_ekt1xe.png);
+  background-size: cover;
+  background-position: 82%;
+}
+
+.deracine_bg .logo {
+   background-image: url(https://res.cloudinary.com/dvn4cywk8/image/upload/v1691000389/FSCLONE/logos/deracine_logo_gimhmf.png);
+  }
+
+/*footer*/
+
+footer {
+  display: flex;
+  z-index: 4;
+  align-self: flex-end;
+  position: absolute;
+  width: 100vw;
+  height: 130px;
+}
+
+footer div:nth-child(2) {
+  display: flex;
+  align-content: flex-end;
+  justify-items: start;
+  width: 100vw;
+  padding-right: 60px;
+}
+
+.news_wrapper {
+  padding-left: 6%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+  min-width: 600px;
+  height: 130px;
+}
+
+.news_wrapper li {
+  display: flex;
+}
+
+.news_wrapper p {
+  color: white;
+  font-size: 1.3rem;
+  padding: 3px 5px 3px 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.news_wrapper p:nth-child(1) {
+  background-color: #fff;
+  color: black;
+}
+
+.news_wrapper p:nth-child(2) {
+  border: 1px solid #fff;
+  background-color: #151515;
+  margin-left: 5px;
+}
+
+.news_wrapper a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.world_icon {
+  width: 16.8px;
+  height: 16.8px;
+  background-image: url(https://res.cloudinary.com/dvn4cywk8/image/upload/v1689548830/FSCLONE/world_icon_alzy3l.svg);
+  background-size: cover;
+  background-position: center;
+  filter: invert();
+  margin-right: 5px;
+}
+
+.link_wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-self: flex-end;
+  font-size: 1.4rem;
+  color: #fff;
+  z-index: 4;
+  min-width: 576px;
+  height: 70px;
+  row-gap: 10px;
+}
+
+.link_wrapper img {
+  filter: invert();
+}
+
+.link_wrapper li:nth-child(1) {
+  display: flex;
+  column-gap: 10px;
+  align-self: flex-end;
+}
+
+.link_wrapper li:nth-child(2) {
+  display: flex;
+  align-self: flex-end;
+}
+
+.link_wrapper ul {
+  display: flex;
+  align-self: flex-end;
+  max-height: 16px;
+  right: 25px;
+  padding: 0px 10px 0px 10px;
+  margin-right: 20px;
+}
+
+.link_wrapper ul li {
+  display: flex;
+  border-left: 1px solid gray;
+  padding: 0 10px 0 10px;
+  color: gray;
+  transition: all 0.5s ease-in-out;
+}
+
+.link_wrapper ul li:hover {
+  color: #fff;
+}
+
+.full {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  clip-path: none;
+  opacity: 100%;
+  filter: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.main_section {
+  width: 100%;
+}
+
+#bg_wrapper h2, p, span, iframe{
+  z-index: 0;
+}
+
+
+.info_container {
+  display:flex;
+  flex-direction: column;
+  color: white;
+  border: 1px solid yellow;
+  width: 462px;
+  height: 50%;
+  align-self: center;
+  /* display: none; */
+  display: none;
+}
+
+.oficial_site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  width: 120px;
+  height: 20px;
+  
+}
