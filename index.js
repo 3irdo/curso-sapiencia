@@ -1,33 +1,38 @@
 // audio ------------------------------------------
-  
-window.onload = () => {
-  var sound = new Howl({
-    src: ['audio/Where The Brave May Live Forever - Viking Background Music.ogg'],
-    volume:0.5,
-    onload: function() {
-      sound.play();
+var sound = new Howl({
+  src: ["audio/Where The Brave May Live Forever - Viking Background Music.ogg"],
+  volume: 0.5,
+  onload: function () {
+    sound.play();
 
-      const wrappers = document.querySelectorAll('.bg_imgs');
+    const btnMute = document.getElementById("btn_mute");
 
-      wrappers.forEach((wrapper, index) => {
-        gsap.from(wrapper, {
-          height: "0",
-          duration: 0.5,
-          ease: 'power2.out',
-          delay: index * 0.4,
-          onComplete: () => {
-            gsap.to(wrapper, {
-              height: "100vh",
-              duration: 0.5,
-              ease: 'power2.out',
-            })
-          }
-        });
-      });
+    btnMute.addEventListener("click", muter);
+
+    function muter() {
+      sound.mute(!sound.mute());
     }
-  });
-};
+  },
+});
 
+// Animación de wrappers
+const wrappers = document.querySelectorAll(".bg_imgs");
+
+wrappers.forEach((wrapper, index) => {
+  gsap.from(wrapper, {
+    height: "0",
+    duration: 0.5,
+    ease: "power2.out",
+    delay: index * 0.4,
+    onComplete: () => {
+      gsap.to(wrapper, {
+        height: "100vh",
+        duration: 0.5,
+        ease: "power2.out",
+      });
+    },
+  });
+});
 
 const lg = document.querySelectorAll(".logo");
 const bgFulled = document.querySelectorAll(".bg_imgs");
@@ -36,24 +41,21 @@ const bgFulled = document.querySelectorAll(".bg_imgs");
 
 function bgFuller(bgf) {
   const bgTarget = bgf.target;
-  const showInfo = bgTarget.querySelectorAll('.info_container');
+  const showInfo = bgTarget.querySelectorAll(".info_container");
   if (bgTarget.classList.contains("bg_imgs")) {
     bgTarget.classList.toggle("full");
   }
 
-  if (bgTarget.classList.contains('full')) {
-    showInfo.forEach(function(infoWrapper){
-      infoWrapper.style.visibility = 'visible';
+  if (bgTarget.classList.contains("full")) {
+    showInfo.forEach(function (infoWrapper) {
+      infoWrapper.style.visibility = "visible";
     });
-  }  else {
-    showInfo.forEach(function(infoWrapper) {
-      infoWrapper.style.visibility = 'hidden';
+  } else {
+    showInfo.forEach(function (infoWrapper) {
+      infoWrapper.style.visibility = "hidden";
     });
   }
-    
-  }
-
-
+}
 
 function fuller(event) {
   const targetElement = event.target;
@@ -81,13 +83,7 @@ lg.forEach(function (logo) {
   logo.addEventListener("mouseout", function (event) {
     event.target.style.opacity = "0";
   });
-
 });
-
-
-
-
-
 
 // cambia el color de fondo de los span dentro de la clase plataforma dependiendo de su texto
 
