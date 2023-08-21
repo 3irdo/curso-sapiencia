@@ -89,7 +89,7 @@ nav {
   width: 14px;
   height: 14px;
   margin-left: 5px;
-  background-image: url(/media/img/linkicon.png);
+  background-image: url(media/img/linkicon.png);
   background-size: contain;
   background-color: #fff;
 }
@@ -140,7 +140,7 @@ nav {
   height:40px;
   filter: invert(100%);
   opacity:70%;
-  background-image: url(/media/img/logo/chevron-double-left.svg);
+  background-image: url(media/img/logo/chevron-double-left.svg);
   background-repeat: no-repeat;
   transform: 0.2s;
 }
@@ -223,7 +223,7 @@ iframe {
 
 
 .ds_bg {
-  background-image: url(/media/img/bg/ds_bg.png);
+  background-image: url(media/img/bg/ds_bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -235,7 +235,7 @@ iframe {
 
 
 .sekiro_bg {
-  background-image: url(/media/img/bg/sk_bg.png);
+  background-image: url(media/img/bg/sk_bg.png);
   background-size: cover;
   background-position: 80%;
 }
@@ -246,7 +246,7 @@ iframe {
 
 
 .armored_bg {
-  background-image: url(/media/img/bg/armored_bg.png);
+  background-image: url(media/img/bg/armored_bg.png);
   background-size: cover;
   background-position: 25%;
 }
@@ -257,7 +257,7 @@ iframe {
 
 
 .elden_bg {
-  background-image: url(/media/img/bg/eldenbg.png);
+  background-image: url(media/img/bg/eldenbg.png);
   background-size: cover;
   background-position: center;
 }
@@ -267,7 +267,7 @@ iframe {
 }
 
 .bloddb_bg {
-  background-image: url(/media/img/bg/bb_bg.png);
+  background-image: url(media/img/bg/bb_bg.png);
   background-size: cover;
   background-position: 78%;
 }
@@ -277,7 +277,7 @@ iframe {
 }
 
 .deracine_bg {
-  background-image: url(/media/img/bg/deracine_bg.png);
+  background-image: url(media/img/bg/deracine_bg.png);
   background-size: cover;
   background-position: 82%;
 }
@@ -433,11 +433,11 @@ border: 0;
 }
 
 #btn_play {
-  background-image: url(/media/img/icon/volume-up.svg);
+  background-image: url(media/img/icon/volume-up.svg);
   filter: invert();
 }
 
 #btn_stop {
-  background-image: url(/media/img/icon/volume-mute.svg);
+  background-image: url(media/img/icon/volume-mute.svg);
   filter: invert();
 }

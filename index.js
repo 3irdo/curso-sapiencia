@@ -2,7 +2,7 @@
   
 window.onload = () => {
   var sound = new Howl({
-    src: ['/audio/Where The Brave May Live Forever - Viking Background Music.ogg'],
+    src: ['audio/Where The Brave May Live Forever - Viking Background Music.ogg'],
     volume:0.5,
     onload: function() {
       sound.play();
