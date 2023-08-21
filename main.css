@@ -417,7 +417,7 @@ iframe {
   height: 20px;
   background: none;
   border: 0;
-  background-image: url(/media/img/icon/volume-mute.svg);
+  background-image: url(media/img/icon/volume-mute.svg);
   filter: invert();
 }
 

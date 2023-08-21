@@ -85,7 +85,7 @@ lg.forEach(function (logo) {
   });
 });
 
-// cambia el color de fondo de los span dentro de la clase plataforma dependiendo de su texto
+// cambia el color de fondo de los span dentro de la clase plataforms dependiendo de su texto
 
 function plataformBg() {
   const plataform = document.querySelectorAll(".plataforms");
